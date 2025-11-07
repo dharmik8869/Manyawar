@@ -1,0 +1,149 @@
+.most-loved {
+  background-color: #faeedf;
+  padding: 60px 5%;
+  text-align: center;
+  position: relative;
+}
+
+.most-loved h2 {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+.category-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.category-tabs button {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #222;
+  cursor: pointer;
+  position: relative;
+}
+
+.category-tabs button.active {
+  color: #000;
+  font-weight: 600;
+}
+
+.category-tabs button.active::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  width: 40%;
+  height: 3px;
+  background: #c85a11;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.product-carousel {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  padding: 20px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-card {
+  background: white;
+  border-radius: 8px;
+  padding: 10px;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.product-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.product-name {
+  font-size: 0.95rem;
+  margin: 0.8rem 0 0.4rem;
+  color: #333;
+}
+
+.product-price {
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+.wishlist {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.nav-btns {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.nav-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #fff;
+  border: none;
+  box-shadow: 0 0 10px rgba(200, 90, 17, 0.3);
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.nav-btn:hover {
+  background: #c85a11;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .product-carousel {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .product-carousel {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .product-card img {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-carousel {
+    grid-template-columns: 1fr;
+  }
+}

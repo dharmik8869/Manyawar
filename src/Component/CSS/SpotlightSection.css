@@ -1,0 +1,56 @@
+.spotlight-container {
+  background-color: #fff5ec; /* same beige tone */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Title section */
+.spotlight-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+/* Decorative floral icon */
+.spotlight-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+/* Heading text */
+.spotlight-title h2 {
+  font-size: 32px;
+  font-weight: 500;
+  color: #1a1a1a;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+/* Banner image */
+.spotlight-banner {
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .spotlight-title h2 {
+    font-size: 24px;
+  }
+
+  .spotlight-icon {
+    width: 22px;
+    height: 22px;
+  }
+
+  .spotlight-container {
+    padding: 40px 10px;
+  }
+}

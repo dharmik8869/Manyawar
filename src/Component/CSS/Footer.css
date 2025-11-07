@@ -1,0 +1,157 @@
+.footer {
+  background-color: #4b1b02;
+  color: #fff;
+  padding: 50px 80px;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-logo img {
+  width: 200px;
+}
+
+.newsletter {
+  text-align: right;
+}
+
+.newsletter h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.newsletter-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #fff;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.newsletter-box input {
+  background: transparent;
+  border: none;
+  color: #fff;
+  outline: none;
+  padding: 8px;
+  flex: 1;
+}
+
+.newsletter-box input::placeholder {
+  color: #ccc;
+}
+
+.newsletter-box button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+hr {
+  border: 0.5px solid #864118;
+  margin: 30px 0;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+}
+
+.footer-column h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #ddd;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.footer-column ul li:hover {
+  color: #ffb84d;
+}
+
+.contact p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.contact a {
+  color: #ffb84d;
+  text-decoration: none;
+}
+
+.social-title {
+  margin-top: 25px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #ffb84d;
+}
+
+.social-icons svg {
+  cursor: pointer;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons svg:hover {
+  transform: scale(1.2);
+  color: #fff;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 13px;
+  color: #ccc;
+  margin-top: 40px;
+}
+
+.footer-bottom p {
+  margin: 5px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 20px;
+  }
+
+  .newsletter {
+    text-align: left;
+    margin-top: 20px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-column h4 {
+    font-size: 15px;
+  }
+}

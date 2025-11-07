@@ -1,0 +1,74 @@
+.vibe-section {
+  background-color: #fff9f4;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.vibe-header {
+  margin-bottom: 40px;
+}
+
+.vibe-icon {
+  color: #a43b2b;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.vibe-header h2 {
+  font-size: 32px;
+  letter-spacing: 1px;
+  color: #111;
+  font-weight: 500;
+}
+
+.vibe-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.vibe-card {
+  position: relative;
+  width: 340px;
+  height: 450px;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.vibe-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.vibe-card:hover img {
+  transform: scale(1.05);
+}
+
+.vibe-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 0;
+  background: rgba(0, 0, 0, 0.35);
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  transition: background 0.3s;
+}
+
+.vibe-card:hover .vibe-overlay {
+  background: rgba(164, 59, 43, 0.6);
+}
+
+@media (max-width: 900px) {
+  .vibe-card {
+    width: 90%;
+    height: 380px;
+  }
+}
