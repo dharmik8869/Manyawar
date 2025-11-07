@@ -32,7 +32,7 @@ export default function Navbar() {
       {/* Top Logo Banner */}
       <div className="top-logo-banner">
         <img 
-          src="https://www.manyavar.com/on/demandware.static/-/Library-Sites-ManyavarSharedLibrary/default/dw387c7af1/images/Manvayar-Crest-Mohey_Horizontal_3D_logo_Desktop.png" 
+          src="https://www.manyavar.com/on/demandware.static/-/Library-Sites-ManyavarSharedLibrary/default/dw4de42c59/images/Crest_3D_1.svg" 
           alt="Manyavar Logo" 
           className="banner-logo"
         />
@@ -45,7 +45,7 @@ export default function Navbar() {
         <Link to="/">
           <img
             src="https://www.manyavar.com/on/demandware.static/-/Library-Sites-ManyavarSharedLibrary/default/dw4de42c59/images/Crest_3D_1.svg"
-            alt="logo"
+            alt="Manyavar"
             className="logo"
           />
         </Link>
