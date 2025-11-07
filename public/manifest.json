@@ -1,13 +1,14 @@
 {
+  "name": "Manyavar",
   "short_name": "Manyavar",
-  "name": "Manyavar - Ethnic Fashion Store",
   "description": "Manyavar - Premium Ethnic Fashion Store",
+  "start_url": "/?utm_source=homescreen",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#c5a47e",
+  "background_color": "#f8f3ed",
   "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
     {
       "src": "logo192.png",
       "type": "image/png",
@@ -21,14 +22,9 @@
       "purpose": "any maskable"
     },
     {
-      "src": "logo192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
     }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#c5a47e",
-  "background_color": "#f8f3ed"
+  ]
 }
